@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./", //配置baseUrl解析当前目录
+    "paths": {
+      "@/*": ["src/*"],
+      "@root/*": ["../../*"]
+    }
+  },
+  "compileOnSave": false
+}

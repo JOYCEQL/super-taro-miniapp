@@ -1,0 +1,71 @@
+{
+  "name": "super-miniapp",
+  "version": "1.0.0",
+  "private": false,
+  "description": "基于taro的monorepo项目",
+  "templateInfo": {
+    "name": "default",
+    "typescript": true,
+    "css": "less"
+  },
+  "scripts": {
+    "generate": "node ./scripts/create-project.ts",
+    "dev:weapp:demo": "pnpm -F demo dev:weapp",
+    "build:weapp:demo": "pnpm -F demo build:weapp",
+    "dev:weapp:order-exchange": "pnpm -F order-exchange dev:weapp"
+  },
+  "browserslist": [
+    "last 3 versions",
+    "Android >= 4.1",
+    "ios >= 8"
+  ],
+  "author": "yuguangzhou@yiwise.com",
+  "dependencies": {
+    "@babel/runtime": "^7.7.7",
+    "@tarojs/components": "3.6.5",
+    "@tarojs/helper": "3.6.5",
+    "@tarojs/plugin-framework-react": "3.6.5",
+    "@tarojs/plugin-platform-alipay": "3.6.5",
+    "@tarojs/plugin-platform-h5": "3.6.5",
+    "@tarojs/plugin-platform-jd": "3.6.5",
+    "@tarojs/plugin-platform-qq": "3.6.5",
+    "@tarojs/plugin-platform-swan": "3.6.5",
+    "@tarojs/plugin-platform-tt": "3.6.5",
+    "@tarojs/plugin-platform-weapp": "3.6.5",
+    "@tarojs/react": "3.6.5",
+    "@tarojs/runtime": "3.6.5",
+    "@tarojs/shared": "3.6.5",
+    "@tarojs/taro": "3.6.5",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.1",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.5",
+    "@tarojs/cli": "3.6.5",
+    "@tarojs/webpack5-runner": "3.6.5",
+    "@types/node": "^18.15.11",
+    "@types/react": "^18.0.0",
+    "@types/webpack-env": "^1.13.6",
+    "@typescript-eslint/eslint-plugin": "^5.20.0",
+    "@typescript-eslint/parser": "^5.20.0",
+    "babel-loader": "^9.1.2",
+    "babel-plugin-import": "^1.13.6",
+    "babel-preset-taro": "3.6.5",
+    "chalk": "^4.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.12.0",
+    "eslint-config-taro": "3.6.5",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-react": "^7.8.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "install": "^0.13.0",
+    "ora-classic": "^5.4.2",
+    "postcss": "^8.4.18",
+    "react-refresh": "^0.11.0",
+    "stylelint": "^14.4.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.1.0",
+    "webpack": "5.78.0"
+  }
+}
