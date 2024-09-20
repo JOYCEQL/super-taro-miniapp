@@ -12,6 +12,7 @@
     "generate": "node ./scripts/create-project.ts",
     "dev:weapp:demo": "pnpm -F demo dev:weapp",
     "build:weapp:demo": "pnpm -F demo build:weapp",
+    "dev:rn:demo": "pnpm -F demo dev:rn",
     "dev:weapp:order-exchange": "pnpm -F order-exchange dev:weapp"
   },
   "browserslist": [
@@ -37,7 +38,8 @@
     "@tarojs/shared": "3.6.5",
     "@tarojs/taro": "3.6.5",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "react-native-gesture-handler": "~2.9.0"
   },
   "devDependencies": {
     "@babel/core": "^7.22.1",
