@@ -16,6 +16,14 @@ const config = {
     unstable_enableSymlinks: true,
     unstable_enablePackageExports: true,
   },
+  transformer: {
+    getTransformOptions: async () => ({
+      transform: {
+        experimentalImportSupport: false,
+        inlineRequires: true,
+      },
+    }),
+  },
 };
 console.log(__dirname, 'getDefaultConfig(__dirname)');
 module.exports = (async function () {
